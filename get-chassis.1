@@ -119,7 +119,9 @@ get_chassis laptop && echo "Running on a laptop"
 .SH EXIT STATUS
 .TP
 .B 0
-Chassis type detected (no arguments), or a match was found (with arguments).
+Success (no arguments), or a match was found (with arguments).
+If no detection method succeeds, an empty string is printed but exit status
+is still 0.
 .TP
 .B 1
 No match found (with arguments), or unknown option given.
